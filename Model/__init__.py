@@ -29,9 +29,3 @@ class QRCode(object):
             self.save_eps()
         if show:
             print(self.qr.terminal(quiet_zone=1))
-
-
-if __name__ == '__main__':
-
-    qrcode = QRCode()
-    qrcode.fit('https://www.deezer.com/id/feed', show=True)
